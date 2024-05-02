@@ -24,6 +24,7 @@ public class PostService {
     }
 
     public Post addPost(Post post) {
+        System.out.println("POST to save" + post);
         return postRepository.save(post);
     }
 
